@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@300&family=Hind+Siliguri&family=Joan&family=Noto+Serif&family=Overpass:wght@200;400&family=PT+Sans:ital@1&family=Pacifico&family=Playfair+Display&display=swap");
+/* normal */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: rgb(185, 234, 234);
+}
+/* question section */
+#general-questions .title h2 {
+  font-family: "Abril Fatface", cursive;
+  color:darkgoldenrod;
+  letter-spacing: 3px;
+  line-height: 50px;
+  text-align:center;
+}
+
+/* question article */
+#general-questions .question-article{
+    background-color: #fff;
+    padding:10px 10px;
+    border-radius:5px;
+    width:450px;
+    margin:20px auto;
+}
+
+/* question */
+.question-article .question{
+    display:flex;
+    justify-content: space-between;
+}
+.question p{
+   font-size: 18px;
+}
+.question .buttons{
+    color:darkgoldenrod;
+}
+.buttons .minus{
+    display: none;
+}
+
+/* answer */
+.question-article .answer{
+    display: none;
+    margin-top: 20px;
+}
+.question-article .answer hr{
+    margin-bottom: 5px;
+}
+
+/* class which work with js */
+.show-ans .answer, .show-ans .minus{
+    display: block;
+}
+
+.show-ans .plus{
+    display: none;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    h2{
+        font-size: 22px;
+    }
+    #general-questions .question-article {
+        width: 300px;
+    }
+}
